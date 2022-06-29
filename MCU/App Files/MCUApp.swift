@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MCUApp: App {
+    
+    let coordinatorObject = CoordinatorObject()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoordinatorView(object: coordinatorObject)
         }
     }
 }
